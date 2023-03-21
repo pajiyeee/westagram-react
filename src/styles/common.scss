@@ -1,0 +1,14 @@
+@import "./reset.scss";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+input::placeholder {
+  @include textStyle(14px, 400, 22px, #999);
+}
