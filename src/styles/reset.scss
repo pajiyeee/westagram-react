@@ -1,0 +1,17 @@
+@mixin flexAlign($display, $justifycontent, $alignitems) {
+  display: $display;
+  justify-content: $justifycontent;
+  align-items: $alignitems;
+}
+
+@mixin textStyle($fontsize, $fontweight, $lineheight, $color) {
+  font-size: $fontsize;
+  font-weight: $fontweight;
+  line-height: $lineheight;
+  color: $color;
+}
+
+@mixin textBtnStyle {
+  background-color: rgba(000, 000, 000, 0);
+  border: 0;
+}

@@ -1,0 +1,67 @@
+@import "../../styles/common.scss";
+@import "../../styles/reset.scss";
+
+.login {
+  @include flexAlign(flex, center, center);
+  height: 100vh;
+  background-color: #f0f0f0;
+  font-family: "Noto Sans KR", sans-serif;
+  @include textStyle(16px, 400, 24px, #111);
+
+  .container {
+    width: 600px;
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 40px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .logo_text {
+    font-family: "Lobster", cursive;
+    @include textStyle(70px, null, 70px, #111);
+    margin-bottom: 80px;
+  }
+
+  .input_set input {
+    width: 420px;
+    padding: 16px 16px;
+    margin-bottom: 12px;
+    background-color: #fafafa;
+    border: solid 1px #efefef;
+    border-radius: 4px;
+    @include textStyle(18px, 400, 32px, #333);
+  }
+
+  .input_set input::placeholder {
+    @include textStyle(18px, 400, 32px, #999);
+  }
+
+  #btn_login {
+    display: block;
+    all: unset;
+    width: 420px;
+    height: 60px;
+    background-color: #3a82ff;
+    border-radius: 8px;
+    text-align: center;
+    @include textStyle(18px, 400, 60px, #fff);
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .btnLoginOn {
+    opacity: 1;
+  }
+
+  .btnLoginOff {
+    opacity: 0.5;
+  }
+
+  .btn_text {
+    width: 480px;
+    @include textBtnStyle;
+    @include textStyle(16px, 400, 24px, #666);
+    margin-bottom: 40px;
+  }
+}
